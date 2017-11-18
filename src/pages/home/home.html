@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Vaches list</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of items">
+          <ion-thumbnail item-left>
+          <img src="{{ item.photo }}">
+          </ion-thumbnail>
+          <h2>{{ item.sanibel }}</h2>
+          <h4>{{ item.location }}</h4>
+        </ion-item>
+
+      </ion-list>
+
+</ion-content>
